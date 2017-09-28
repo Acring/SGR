@@ -1,0 +1,16 @@
+//created on: 2017-9-23
+package com.rulesdrools
+
+import com.predicate.*;
+import util.Manager;
+
+global Manager manager;
+
+
+rule "Acring"
+    when
+        $acring: Acring()
+    then
+        retract($acring);
+end
+
